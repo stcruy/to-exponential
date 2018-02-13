@@ -1,6 +1,6 @@
 ## to-exponential
 
-Converts an arbitrarily big, small, or precise number represented as a String,
+Converts any arbitrarily big, small, or precise number represented as a String,
 to exponential notation just like JavaScript's `Number.toExponential()`.
 
 This can be used as a unique identifier for the number's value.
