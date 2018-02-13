@@ -1,0 +1,35 @@
+{
+  "name": "to-exponential",
+  "version": "1.0.0",
+  "description": "Converts any big/small/precise decimal number represented as String, to exponential notation.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha  \"src/**/*.test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stcruy/to-exponential.git"
+  },
+  "keywords": [
+    "number",
+    "toExponential",
+    "scientific",
+    "exponential",
+    "notation",
+    "big",
+    "large",
+    "small",
+    "precise",
+    "precision"
+  ],
+  "author": "Steven Vercruysse (http://stcruy.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stcruy/to-exponential/issues"
+  },
+  "homepage": "https://github.com/stcruy/to-exponential#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  }
+}

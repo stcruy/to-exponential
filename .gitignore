@@ -1,0 +1,5 @@
+node_modules/
+*.bat
+*.lnk
+*.sublime-project
+*.sublime-workspace
