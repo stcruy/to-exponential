@@ -1,6 +1,6 @@
 {
   "name": "to-exponential",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts any big/small/precise decimal number represented as String, to exponential notation.",
   "main": "src/index.js",
   "scripts": {
