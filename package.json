@@ -4,7 +4,8 @@
   "description": "Converts any big/small/precise decimal number represented as String, to exponential notation.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha  \"src/**/*.test.js\""
+    "test": "mocha  \"src/**/*.test.js\"",
+    "testw": "mocha  \"src/**/*.test.js\" --watch"
   },
   "repository": {
     "type": "git",

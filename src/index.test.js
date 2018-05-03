@@ -75,6 +75,7 @@ describe('toExponential()', function() {
       [  '+e2', false],
       [ '+.e2', false],
       ['1.0.1', false],
+      ['300000000000000000000000000000000000000000000000000e1000', '3e+1050'],
     ]
     .forEach(function(pair) {
       it('correctly converts ' + pair[0] + ' to ' + pair[1], function() {
