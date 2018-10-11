@@ -2,7 +2,7 @@ module.exports = toExponential;
 module.exports.addBigInts = addBigInts;
 
 
-var numberRegEx = /^([+\-])?([0-9\.]+)(?:[e|E]([+\-]?[0-9]+))?$/;
+var numberRegEx = /^([+-])?([0-9.]+)(?:[e|E]([+-]?[0-9]+))?$/;
 
 
 function toExponential(str) {

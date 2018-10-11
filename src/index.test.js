@@ -2,7 +2,7 @@ const toExponential = require('./index.js');
 const addBigInts = toExponential.addBigInts;
 
 const chai = require('chai');
-const expect = chai.expect;
+const expect = chai.expect;  // eslint-disable-line no-unused-vars
 chai.should();
 
 
@@ -78,8 +78,7 @@ describe('toExponential()', function() {
       [ '+.e2', false],
       ['1.0.1', false],
       ['300000000000000000000000000000000000000000000000000e1000', '3e+1050'],
-    ]
-    .forEach(function(pair) {
+    ].forEach(pair => {
       it('correctly converts ' + pair[0] + ' to ' + pair[1], function() {
         toExponential(pair[0]).should.equal(pair[1]);
       });
@@ -136,11 +135,10 @@ describe('addBigInts()', function() {
       ['-561640934731461387461933142', '49',   '-561640934731461387461933093'],
       ['49', '-561640934731461387461933142',   '-561640934731461387461933093'],
       ['8565425879963214589', '-8565425879963214589', '0'],
-      ['8565425879963214589632547896200778565425879963214',
-       '8565425879963214589632547896200778565425879963214',
-       '17130851759926429179265095792401557130851759926428'],
-    ]
-    .forEach(function(arr) {
+      [ '8565425879963214589632547896200778565425879963214',
+        '8565425879963214589632547896200778565425879963214',
+        '17130851759926429179265095792401557130851759926428' ],
+    ].forEach(arr => {
       it('finds that ' + arr[0] + ' + ' + arr[1] + ' = ' + arr[2], function() {
         addBigInts(arr[0], arr[1]).should.equal(arr[2]);
       });
@@ -150,7 +148,7 @@ describe('addBigInts()', function() {
   describe('random tests, should equal Number addition', function() {
     var rand = () =>
       ( ~~((Math.random() - 0.5) * 1e12) ).toString()  // Get large integer.
-      .substring(0, 2 + 10 * Math.random());  // Cut-off to a variable length.
+        .substring(0, 2 + 10 * Math.random());  // Cut-off to a variable length.
     for (var i = 0; i < sizeOfRandomTests; i++) {
       var a = rand();
       var b = rand();
