@@ -48,3 +48,8 @@ console.dir( toExponential(
 ) );
 // => '-1.23243434716349863831487632112e-561640934731461387461933138'.
 ```
+
+### License
+
+This project is licensed under the MIT license - see
+[LICENSE.md](LICENSE.md).
